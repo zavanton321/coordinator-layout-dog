@@ -12,7 +12,7 @@ class DogActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dog)
 
-        setSupportActionBar(vToolbar)
+         setSupportActionBar(vToolbar)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
