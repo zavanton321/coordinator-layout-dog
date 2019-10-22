@@ -1,7 +1,8 @@
-package com.example.morecoord
+package com.example.morecoord.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.morecoord.R
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 

@@ -25,9 +25,21 @@ class CustomToggleButtonBehavior : CoordinatorLayout.Behavior<CustomToggleButton
 
         if (dependency is Snackbar.SnackbarLayout) {
             child.isChecked = true
-            child.text = "I see a snackbar"
+            child.text = "Yes"
             return true
         }
         return false
+    }
+
+    override fun onDependentViewRemoved(
+        parent: CoordinatorLayout,
+        child: CustomToggleButton,
+        dependency: View
+    ) {
+        super.onDependentViewRemoved(parent, child, dependency)
+        if (dependency is Snackbar.SnackbarLayout) {
+            child.isChecked = false
+            child.text = "No"
+        }
     }
 }
